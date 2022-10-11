@@ -1,0 +1,149 @@
+/* * {
+  border: 1px solid grey;
+} */
+
+/*css for framed photo*/
+:root {
+  --orchid: #da70d6; /*--red: tomato;*/
+  --bgColor: bisque;
+}
+/*end css for framed photo*/
+
+html {
+  font-family: "Quicksand", "Trebuchet MS", "Glory", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #da70d6; /* #bf5fff;*/ /*#8F00FF;*/
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+  /* background: #ffffff;
+  color: #8f00ff; */
+  background-color: var(--bgColor);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+main {
+  height: 100%;
+  min-height: 80vh;
+  padding: 20;
+  margin: 20px;
+  /* border: 1px solid black; */
+}
+
+main img {
+  height: 250px;
+}
+
+header {
+  height: 70px;
+}
+
+header img {
+  max-height: 80%;
+  display: inline-block;
+}
+
+nav {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  text-align: bottom;
+  color: #8f00ff;
+}
+
+nav a {
+  padding: 5px;
+  height: 30px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+footer img {
+  height: 20px;
+}
+
+footer img#arrow-id {
+  height: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.selected {
+  font-weight: bold;
+  text-decoration: none;
+  /* border-bottom: 1px solid purple; */
+}
+
+div {
+  /* height: 29%; */
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+}
+
+/* 
+ div.container {
+  font-size: 1.5vw;
+} 
+
+div#frame {
+  display: inline-block;
+  margin: 25px;
+}
+
+section img#contact-me {
+  max-height: 20%;
+  display: inline-block;
+}
+
+img.framed {
+  --s: 10px; -- control the size 
+  padding: var(--s);
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid red;
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, red 0);
+} */
+
+/*css for framed photo*/
+/* :root {
+  --red: tomato;
+  --bgColor: bisque;
+} */
+
+/* body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--bgColor);
+} */
+
+img.framed {
+  margin: 5px;
+  width: 20%;
+  height: auto;
+  box-shadow: -50px -50px 0 -40px var(--orchid), 50px 50px 0 -40px var(--orchid);
+  display: inline-block;
+}
+
+/*end css for framed photo*/
