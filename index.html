@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main_styles.css" />
-    <link rel="stylesheet" href="snips.css" />
     <style>
       /* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lemonada:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
       @import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap");
@@ -15,35 +14,23 @@
   <body>
     <header>
       <nav>
-        <a href="#" class="selected">Home</a>
-        <a href="social.html">Portfolio</a>
-        <a href="contact.html">Let's Connect</a>
+        <ul>
+          <li><a href="index.html" id="selected">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Let's Connect</a></li>
+        </ul>
       </nav>
     </header>
     <main>
       <section>
         <div>
           <img
-            class="framed"
-            src="images/me-avatar-1.jpg"
+            class="module"
+            src="images/me-avatar-1.png"
             alt="Profile Photo"
           />
         </div>
       </section>
-
-      <!-- <section>
-        <h1>Hello there</h1>
-        <h2>Bienvenue</h2>
-        <div>
-          <figure class="snip1113 lavender hover">
-            <img src="images/me-avatar-1.jpg" alt="Profile Photo" />
-            <figcaption>
-              <h3>Alany<span>Chan</span></h3>
-              <h4>Student</h4>
-            </figcaption>
-          </figure>
-        </div>
-      </section> -->
       <section>
         <div>
           <p>
@@ -53,7 +40,7 @@
         </div>
       </section>
       <section>
-        <div>
+        <div id="about-me">
           <p>
             Originally from the tropical paradise of Mauritius, I started my
             career in the Tech world as a software developer and built my skills
