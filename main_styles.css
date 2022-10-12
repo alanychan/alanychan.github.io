@@ -10,15 +10,17 @@
 /*end css for framed photo*/
 
 html {
-  font-family: "Glory", "Quicksand", "Trebuchet MS", sans-serif;
-  font-size: 1rem;
+  font-family: "Roboto Slab", "Trebuchet MS", sans-serif;
+  font-size: 0.85rem;
   font-weight: bold;
   font-style: italic;
-  color: midnightblue; /* #da70d6;*/ 
+  color: black;
+  text-shadow: 2px 2px 4px #f585f5;
+  /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
 }
 
 body {
-  background-image: url('images/CF005142.jpg');
+  background-image: url('images/one-flower.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -29,7 +31,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 main {
@@ -76,7 +78,7 @@ footer {
   height: 50px;
   width: 100%;
   text-align: center;
-  color: rgb(168, 76, 248);
+  color:rgb(240, 15, 180);
 }
 
 footer img {
@@ -93,9 +95,15 @@ h2, section {
   text-align: center;
 }
 
+/* div{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+} */
+
 div #about-me{
   margin: 25px;
-  padding: 25px;
+  padding: 25px 50px;
 }
 
 /*gradient on vertical sides*/
@@ -116,24 +124,24 @@ div #about-me{
 
 /*a href css*/
 a:link {
-  color: rgb(168, 76, 248);
+  color: rgb(240, 15, 180);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(168, 76, 248);
+  color: rgb(240, 15, 180);
   background-color: transparent;
   text-decoration: none;
 }
 
 a#selected{
-  color: violet;
+  color: rgb(126, 4, 93);
   background-color: transparent;
   text-decoration: underline;
 }
 a:hover {
-  color: red;
+  color: purple;
   background-color: transparent;
   text-decoration: underline;
 }
