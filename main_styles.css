@@ -6,21 +6,23 @@
 :root {
   --orchid: #da70d6; /*--red: tomato;*/
   --bgColor: bisque;
+  --vfontColor: #2d0864;
+  --vShadowColor: pink;
 }
 /*end css for framed photo*/
 
 html {
-  font-family: "Roboto Slab", "Trebuchet MS", sans-serif;
+  font-family: "Glory", "Trebuchet MS", sans-serif;
   font-size: 0.85rem;
   font-weight: bold;
   font-style: italic;
-  color: black;
-  text-shadow: 2px 2px 4px #f585f5;
+  color: var(--vfontColor);
+  text-shadow: 2px 2px 4px var(--vShadowColor);
   /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
 }
 
 body {
-  background-image: url('images/one-flower.jpg');
+  background-image: url('images/bgphoto.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -78,7 +80,7 @@ footer {
   height: 50px;
   width: 100%;
   text-align: center;
-  color:rgb(240, 15, 180);
+  color:var(--vfontColor);
 }
 
 footer img {
@@ -124,21 +126,21 @@ div #about-me{
 
 /*a href css*/
 a:link {
-  color: rgb(240, 15, 180);
+  color: var(--vfontColor);
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: rgb(240, 15, 180);
+  color: var(--vfontColor);
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a#selected{
-  color: rgb(126, 4, 93);
+  color: #b30684;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: purple;
