@@ -100,7 +100,6 @@ h2, section {
 
 p {
   text-align: center;
-  width: 600px;
   max-width: 100%;
 }
 
@@ -123,10 +122,6 @@ div #about-me{
 .hr-format{
   color: var(--vfontColor);
   width: 10%;
-}
-
-.box {
-  margin: 5px;
 }
 
 .div-wrapper{ 
@@ -237,20 +232,12 @@ form {
   .div-wrapper {
     align-items: center;
   }
-  /* .left-box, .right-box {
-      width: calc(100% / 2 - 10px);
-      display: inline-block;
-  } */
 }
-
+/* 
 @media (min-width: 900px) {
   .div-wrapper {
     width: calc(100% / 2 - 10px);
     display: inline-block;
   }
-  /* .left-box, .right-box {
-    width: calc(100% / 2 - 10px);
-    display: inline-block;
-    height: 300px;
-  } */
-}
+
+} */
