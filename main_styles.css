@@ -8,6 +8,7 @@
   --orchid: #da70d6; /*--red: tomato;*/
   --vfontColor: #450c90;
   --vShadowColor: white; /* turquoise;*/
+  --vHoverColor: lavender;
 }
 /*end css for framed photo*/
 
@@ -103,12 +104,6 @@ p {
   max-width: 100%;
 }
 
-/* div{
-  display: flex;
-  flex-flow: row wrap;
-  align-content: flex-start;
-} */
-
 div #about-me{
   padding: 25px 50px;
   margin: 25px;
@@ -188,7 +183,7 @@ form {
 }
 
 .form-item label {
-  flex-basis: 150px;
+  flex-basis: 70px;
   text-align: left;
   /* font-size: 22px; */
 }
@@ -201,7 +196,7 @@ form {
 
 .form-item input:hover,
 .form-item textarea:hover {
-  border: 2px solid var(--vfontColor);
+  border: 2px solid var(--vHoverColor);
 }
 
 .form-item input,
@@ -215,13 +210,18 @@ form {
 }
 
 .form-item button:hover {
-  background-color: var(--vfontColor);
-  border: 2px solid white;
-  color: #FFF;
+  background-color: var(--vShadowColor);
+  border: 2px solid var(--purple);
+  color: var(--vfontColor);
 }
 
 .form-item button {
   width: 100px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 /*end form css*/
 
