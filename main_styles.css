@@ -197,8 +197,8 @@ html {
 .main-wrapper {
   align-content: center;
   flex-direction: column;
-  margin: 20px;
-  padding: 50px;
+  margin: 0 auto;
+  padding: 20px;
   /* border: 1px solid black; */
 }
 
