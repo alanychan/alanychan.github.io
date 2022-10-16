@@ -1,4 +1,4 @@
- /* * {
+/* * {
   border: 1px solid grey;
 } */
 
@@ -12,11 +12,10 @@
 }
 /*end css for framed photo*/
 
-
 /*a href css*/
 a:link {
   background-color: transparent;
-  color: white;
+  color: var(--vfontColor-header);
   text-decoration: underline;
 }
 
@@ -26,9 +25,9 @@ a:visited {
   text-decoration: underline;
 }
 
-a#selected{
+a#selected {
   background-color: transparent;
-  color: var(--fontColor-header);
+  color: var(--vfontColor-header);
   text-decoration: none;
   font-weight: bold;
 }
@@ -38,8 +37,15 @@ a:hover {
   color: var(--vfontColor-header);
   text-decoration: underline;
 }
-/*end a href css*/
 
+a#link-style {
+  background-color: transparent;
+  color: var(--vfontColor-body);
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+/*end a href css*/
 
 body {
   background-color: var(--vbgColor-body);
@@ -49,22 +55,23 @@ body {
   padding: 25px;
 }
 
-.body-wrapper, .main-wrapper{
-  display:flex;
+.body-wrapper,
+.main-wrapper {
+  display: flex;
   flex-direction: column;
 }
 
-div #about-me{
+div #about-me {
   padding: 25px 50px;
   margin: 25px;
 }
 
-.div-wrapper{ 
+.div-wrapper {
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   max-width: 750px;
+  align-content: flex-start;
 }
-
 
 /*start form css*/
 form {
@@ -90,7 +97,7 @@ form {
 
 .form-item input,
 .form-item textarea {
-  flex-basis:75%;
+  flex-basis: 75%;
   /* border: 2px solid #FDDC5C; */
 }
 
@@ -126,12 +133,11 @@ form {
 }
 /*end form css*/
 
-
 /*start footer css*/
 footer {
   align-items: baseline;
   bottom: 0;
-  color:var(--vfontColor-header);
+  color: var(--vfontColor-header);
   display: flex;
   font-size: 0.75rem;
   font-weight: lighter;
@@ -150,37 +156,36 @@ footer img#arrow-id {
 }
 /*end footer css*/
 
-
-.hr-format{
+.hr-format {
   color: var(--vfontColor);
   width: 10%;
 }
 
 h1,
-h2, section {
+h2,
+section {
   text-align: center;
 }
 
-h1.h1-style{
-color: var(--vfontColor-header);
+h1.h1-style {
+  color: var(--vfontColor-header);
+  font-size: 25px;
 }
 
-h2.h2-style{
-  font-size:20px;
+h2.h2-style {
+  font-size: 20px;
 }
 
 header {
   background-color: var(--vbgColor-header);
   width: 100%;
   height: 70px;
+}
 
-  }
-  
-  header img {
-    display: inline-block;
-    max-height: 80%;
-  }
-
+header img {
+  display: inline-block;
+  max-height: 80%;
+}
 
 html {
   color: var(--vfontColor-body);
@@ -189,7 +194,6 @@ html {
   /* text-shadow: 1px 2px 2px var(--vShadowColor); */
 }
 
-  
 .main-wrapper {
   align-content: center;
   flex-direction: column;
@@ -198,31 +202,25 @@ html {
   /* border: 1px solid black; */
 }
 
-
 main img {
   border-radius: 5%;
   height: auto;
   /*max-width: 300px; */
   margin: 0 10px;
-  width: 80%;
-} */
+  max-width: 80%;
+}
+*/
 
 /*gradient on vertical sides*/
 .module {
   /* color: white; */
   border-width: 3px;
   border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      red, 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
+  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
   max-width: 250px;
-  padding: 1rem; 
+  padding: 1rem;
 }
 /*end gradient on vertical sides*/
-
 
 nav {
   display: flex;
@@ -232,7 +230,7 @@ nav {
 }
 
 nav li {
-  display: inline;  
+  display: inline;
 }
 
 nav a {
@@ -240,10 +238,13 @@ nav a {
   padding: 5px;
 }
 
-
 p {
   text-align: center;
   max-width: 100%;
+}
+
+p #span-style {
+  font-weight: bold;
 }
 
 /*** Media Queries Below ***/
@@ -251,14 +252,16 @@ p {
 @media (min-width: 600px) {
   .main-wrapper {
     align-content: space-around;
-    align-items: center;    
+    align-items: center;
     justify-content: flex-end;
-  }
-  
-  .img{
     width: fit-content;
     height: auto;
-  } 
+  }
+
+  /* .img{
+    width: fit-content;
+    height: auto;
+  }  */
 
   .form-item {
     padding: 10px 5px 10px 0px;
@@ -266,9 +269,28 @@ p {
 }
 
 @media (min-width: 900px) {
-  .main-wrapper{
+  .main-wrapper {
+    flex-direction: row;
+    align-content: center;
+  }
+
+  #main-wrapper {
     flex-direction: row-reverse;
     align-content: center;
   }
 
+  .div-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+    align-content: flex-start;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .h1-style {
+    width: 80%;
+  }
 }

@@ -6,32 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main_styles.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@400;500;600&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap");
     </style>
     <title>Alany Chan</title>
   </head>
-  <body>
-    <header>
+  <body class="body-wrapper">
+    <header class="header-nav">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="about-me.html">About Me</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html" id="selected">Let's Connect</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-wrapper">
       <section>
-        <section>
-          <h1>Let's Connect</h1>
-          <div>
-            <img
-              src="images/photo-bio1.png"
-              alt="Profile Photo"
-            />
-          </div>
-        </section>
-        <div class="form-wrapper">
+        <div class="div-wrapper">
+          <img src="images/logo-letsConnect-med.png" alt="Profile Photo" />
+        </div>
+      </section>
+      <section>
+        <div>
           <form action="#" method="post">
             <!-- your code here -->
             <div class="form-item">
@@ -50,7 +49,6 @@
               <button type="submit">Send!</button>
             </div>
           </form>
-        
         </div>
       </section>
     </main>
