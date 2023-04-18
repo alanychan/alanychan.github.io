@@ -1,55 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    window.addEventListener("DOMContentLoaded", (e) => {
+        // Original JavaScript code by Chirp Internet: www.chirpinternet.eu
+      // Please acknowledge use of this code by including this header.
+      document.querySelectorAll(".fading-slideshow").forEach((slideshow) => {
+
+        slideshow.querySelectorAll(":scope > li").forEach((slide) => {
+
+          slide.style.display = "flex";
+          let currentHeight = slide.offsetHeight;
+          let currentWidth = slide.offsetWidth;
+          slide.style.display = "";
+
+          if(!slideshow.style.width || (currentWidth > parseInt(slideshow.style.width))) {
+            slideshow.style.width = currentWidth + "px";
+          }
+
+          if(!slideshow.style.height || (currentHeight > parseInt(slideshow.style.height))) {
+            slideshow.style.height = currentHeight + "px";
+          }
+
+          slide.style.width = slide.style.height = "100%";
+
+          slide.addEventListener("animationend", (e) => {
+            slideshow.appendChild(slide);
+          });
+
+        });
+
+        });
+
+        });
+  </script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/ac-icon.png" />
     <link rel="stylesheet" href="main_styles.css" />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="form.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@400;500;600&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Quicksand:wght@400;500;700&family=Raleway:ital@0;1&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Satisfy");
     </style>
-    <title>Alany Chan</title>
+    <title>Alany Chan - My Portfolio!</title>
   </head>
   <body class="body-wrapper">
-    <header class="header-nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-me.html">About Me</a></li>
-          <li><a href="portfolio.html" id="selected">Portfolio</a></li>
-          <li><a href="contact.html">Let's Connect</a></li>
-        </ul>
-      </nav>
+      <header class="header-nav">
+        <div class="topnav">
+        <a href="index.html">Alany.chan</a>
+        <div class="topnav-right">
+          <a href="about-me.html">About</a>
+          <a href="portfolio.html" class="active">Projects</a>
+          <a href="contact.html">Get in touch</a>
+        </div>
+      </div>
     </header>
-    <main class="main-wrapper">
+    <div class="main-wrapper">
       <section>
         <div class="div-wrapper">
-          <h1 class="h1-style">Story of my Works</h1>
+          <h1 class="h1-style">Story of my Works!</h1>
         </div>
-        <div class="div-wrapper">
+        <!-- <div class="div-wrapper">
           <img src="images/logo-MyPortfolio-med.png" alt="Profile Photo" />
-        </div>
+        </div> -->
         <div class="div-wrapper">WIP. More to come...</div>
+        <ol class="list-wrapper">
+          <li>Build a webpage using basic HTML</li>
+          <li>Introduction to HTML/CSS</li>
+          <li>Weather project using Python</li>
+          <li>News project using Django</li>
+          <li><a href="https://cool-cheesecake-5691.netlify.app/">
+            Crowdfunding project using React | landing page</a></li>
+          <li>Crowdfunding project using React | pledges page</li>
+          <li><a href="https://warm-creponne-806b0e.netlify.app/" target="_blank">
+            Group project using React & DJango | Tech Diversity - Hero section</a></li>
+          <li><a href="https://warm-creponne-806b0e.netlify.app/" target="_blank">
+            Group project using React & DJango | Tech Diversity - Profile section</a></li>
+        </ol>
       </section>
       <section>
         <div class="div-wrapper">
-          <h2 class="h2-style">My First Page</h2>
-        </div>
-        <div id="box-shadow">
-          <img src="images/build-a-webpage.png" />
-        </div>
-        <div class="div-wrapper">
-          <h2 class="h2-style">Intro to HTML/CSS</h2>
-        </div>
-        <div id="box-shadow">
-          <img src="images/intro-to-html-css.png" />
+          <ul class="fading-slideshow" style="width: 800px; height: 600px;">
+            <!-- <li id="mobile-version"><img src="images/mobile-version.png" alt=""></li>  -->
+            <li><img src="images/build-a-webpage.png" alt=""></li>
+            <li><img src="images/intro-to-html-css.png" alt=""></li>
+            <li><img src="images/python-weather-project.png" alt=""></li>
+            <li><img src="images/news-project-latest-stories.png" alt=""></li>
+            <li><img src="images/crowdfunding-project.png" alt=""></li>
+            <li><img src="images/crowdfunding-project-pledge.png" alt=""></li>
+            <li><img src="images/tech-diversity-hero-section.png" alt=""></li>
+            <li><img src="images/tech-diversity-profile-section.png" alt=""></li>
+            </ul>
         </div>
       </section>
     </main>
-    <!-- <footer>
-      <p class="footer">&copy; 2022 Alany Chan. All rights reserved.</p>
-    </footer> -->
+    <footer>
+      <div>
+        <ul class="social-media-list">
+          <!-- <p>&copy; 2022 Alany Chan. All rights reserved.</p> -->
+          <li>
+            <i class="fa fa-envelope-o"><a href="mailto:amy_cct@yahoo.com" id="email"></a></i>
+          </li>
+          <li>
+            <a href="https://github.com/alanychan" target="_blank" class="contact-icon">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/alany-c/" target="_blank" class="contact-icon">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

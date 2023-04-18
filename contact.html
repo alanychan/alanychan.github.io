@@ -1,79 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/ac-icon.png" />
     <link rel="stylesheet" href="main_styles.css" />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Anek+Gurmukhi:wght@400;500;600&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Quicksand:wght@400;500;700&family=Raleway:ital@0;1&display=swap");
+      @import url("https://fonts.googleapis.com/css?family=Satisfy");
     </style>
-    <title>Alany Chan</title>
+    <title>Alany Chan - Get in touch!</title>
   </head>
   <body class="body-wrapper">
     <header class="header-nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-me.html">About Me</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" id="selected">Let's Connect</a></li>
-          <!-- <li><a href="https://www.linkedin.com/in/alany-c/" target="_blank"><img src="images/linkedin-logo-3.png" id="icon-style"/></a></li> -->
-      </section>
-        </ul>
-      </nav>
+      <div class="topnav">
+        <a href="index.html">Alany.chan</a>
+        <div class="topnav-right">
+          <a href="about-me.html">About</a>
+          <a href="portfolio.html">Projects</a>
+          <a href="contact.html" class="active">Get in touch</a>
+        </div>
+      </div>
     </header>
     <main class="main-wrapper">
       <section>
         <div class="div-wrapper">
-          <h1 class="h1-style">Contact 
-            <a href="https://www.linkedin.com/in/alany-c/" target="_blank">
-              <img src="images/linkedin-logo-3.png" id="icon-style"/>
-            </a>
-            <a href="https://github.com/alanychan" target="_blank">
-              <img src="images/GitHub-Mark.png" id="icon-style"/>
-            </a>
-          </h1>
+          <h1 class="h1-style">Thank you!</h1>
         </div>
         <div class="div-wrapper">
-          <img
-            src="images/logo-letsConnect-med.png"
-            alt="Let's Connect Photo"
-          />
+          <p>Feel free to leave a message!</p>
         </div>
-      </section>
-      <section>
-        <div>
-          <form
-            action="https://formspree.io/f/mbjbknak"
-            method="post"
-            id="box-shadow"
-          >
-            <!-- your code here -->
-            <div class="form-item">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
-            </div>
-            <div class="form-item">
-              <label for="mail">Email</label>
-              <input type="text" id="mail" name="email" />
-            </div>
-            <div class="form-item">
-              <label for="message">Message</label>
-              <textarea id="message" name="message"></textarea>
-            </div>
-            <div class="form-item">
-              <button type="submit">Send!</button>
-            </div>
-          </form>
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fa fa-map-marker fa-2x"><span class="contact-text place">Perth, Australia</span></i>
+            </li>
+            <li class="list-item">
+              <i class="fa fa-phone fa-2x"><span class="contact-text phone">
+                <a href="tel:049 8982678" title="Give me a call">049 898 2678</a></span></i>
+            </li>
+            <li class="list-item">
+              <i class="fa fa-envelope fa-2x"><span class="contact-text gmail">
+                <a href="mailto:amy_cct@yahoo.com" title="Send me an email">amy_cct@yahoo.com</a></span></i>
+            </li>
+          </ul>
         </div>
       </section>
       
+      <section id="contact">
+        <!-- <h1 class="section-header">Contact</h1> -->
+        <div  class="div-wrapper">
+          <!-- Left contact page -->
+          <form action="mailto:amy_cct@yahoo.com" method="post" enctype="text/plain">      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT"/>
+          </form>
+          <!-- Left contact page -->
+        </div>
+      </section>
     </main>
-    <!-- <footer>
-      <p class="footer">&copy; 2022 Alany Chan. All rights reserved.</p>
-    </footer> -->
+    <footer>
+      <div>
+        <ul class="social-media-list">
+          <!-- <p>&copy; 2022 Alany Chan. All rights reserved.</p> -->
+          <li>
+            <i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:amy_cct@yahoo.com" id="email" class="contact-icon"></a></i>
+          </li>
+          <li>
+            <a href="https://github.com/alanychan" target="_blank" class="contact-icon">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/alany-c/" target="_blank" class="contact-icon">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
